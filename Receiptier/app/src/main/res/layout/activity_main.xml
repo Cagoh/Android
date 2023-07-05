@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to Receiptier!"
+        android:textSize="24dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="The one stop solution to manage your receipt and help you keep track of your spending habits and perhaps help you save money more!"
+        android:textSize="18dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="To get started, choose a profile you have created. Multiple profiles can be created for different users."
+        android:textSize="18dp"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center"/>
+
+    <Spinner
+        android:id="@+id/profile_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:dropDownVerticalOffset="50dp"
+        />
+
+    <Button
+        android:id="@+id/select_profile_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Select Profile"
+        android:layout_marginTop="120dp"
+        android:onClick="selectProfile"/>
+
+    <EditText
+        android:id="@+id/nameEditText"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter your name"
+        android:textAlignment="center"
+        android:layout_marginTop="60dp"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:id="@+id/create_profile_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Create Profile"
+        android:layout_marginTop="10dp"
+        android:onClick="createProfile"
+        app:labelVisibilityMode="labeled"/>
+
+</LinearLayout>

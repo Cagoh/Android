@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReceiptActivity"
+    android:orientation="vertical"
+    android:gravity="center">
+
+
+
+
+    <!-- Your main content here -->
+
+    <TextView
+        android:id="@+id/profile_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_gravity="start|top"
+        android:layout_marginLeft="20dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+    <!--
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+
+        app:title="My App">
+
+        <menu
+            android:id="@+id/options_menu"
+            app:menu="@menu/menu_receipt" />
+
+    </androidx.appcompat.widget.Toolbar>
+    -->
+
+
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:id="@+id/image_view"
+        android:src="@drawable/ic_image"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtImageAnalysed"
+        android:textSize="16sp"
+        android:text="Image Analysed please choose other receipt!"/>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/rotateLeftButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:onClick="imageRotateLeft"
+            android:contentDescription=""
+
+            android:src="@drawable/ic_menu_rotate_left" />
+
+        <ImageButton
+            android:id="@+id/rotateRightButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:onClick="imageRotateRight"
+            android:contentDescription=""
+
+            android:src="@drawable/ic_menu_rotate_right" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnChoosePhoto"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Choose photo"
+            android:layout_marginRight="20dp"
+            android:onClick="choosePhoto" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Analyse Image"
+            android:id="@+id/btnUploadImage"
+            android:onClick="uploadImage" />
+
+        <Button
+            android:id="@+id/btnReceiptEnterManually"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Enter Manually"
+            android:layout_marginLeft="20dp"
+            android:onClick="receiptEnterManually" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            app:menu="@menu/navigation_menu"
+            style="@style/NoAnimationBottomNavViewStyle"
+            app:labelVisibilityMode="labeled"/>
+    </FrameLayout>
+
+</LinearLayout>

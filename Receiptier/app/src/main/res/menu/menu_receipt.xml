@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_choose_photo"
+        android:title="Choose photo" />
+    <item
+        android:id="@+id/menu_open_camera"
+        android:title="Take picture" />
+    <item
+        android:id="@+id/menu_enter_manually"
+        android:title="Enter manually" />
+</menu>
